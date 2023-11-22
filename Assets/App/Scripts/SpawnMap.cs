@@ -32,6 +32,7 @@ public class SpawnMap : MonoBehaviour
         {
             Destroy(item.gameObject);
         }
+        _mapsList.Clear();
         _mapMovements.Clear();
 
         var gm = Instantiate(_mapStartPrefabs, new Vector3(0, 0, 0), Quaternion.identity);
